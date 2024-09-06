@@ -1,0 +1,104 @@
+
+<html>
+<head>
+    <style>
+        h1 {
+            background-color: blanchedalmond;
+            height: 40px;
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            background-color: blanchedalmond;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            margin: 20px;
+        }
+        .box {
+            padding: 20px;
+            border: 2px solid palevioletred;
+            margin: 50px 100px 50px 20px;
+            background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-fast-food-restaurant-menu-advertising-poster-background-material-picture-image_1084251.jpg");
+            box-sizing: content-box;
+            box-shadow: 5px 5px grey;
+            background-size: contain;
+            background-position: center;
+            height: 600px;
+            width: 400px;
+        }
+        .box1 {
+            padding: 10px;
+            border: 2px solid palevioletred;
+            height: 480px;
+        }
+        input[type="checkbox"] {
+            display: none; /* Hide the checkboxes */
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            width: 180px;
+            text-align: center;
+            
+            border: 1px solid #333;
+            background-color: blanchedalmond;
+        }
+        .Available + label::after{
+            content: " Available";
+            color: green;
+            display: none;
+        }
+        .unAvailable + label::after {
+            content: " Unavailable";
+            color: red;
+            display: none;
+        }
+        input:checked + ::after {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>MY RESTAURANT</h1>
+        <div class="box1">
+            <h2>Menu Items:</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="item1" class="Available">
+                    <label for="item1">Grilled chicken</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item2" class="unAvailable">
+                    <label for="item2">Chilli chicken</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item3" class="Available">
+                    <label for="item3">Paneer Butter Masala</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item4" class="unAvailable">
+                    <label for="item4">Kaju Paneer</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item5" class="Available">
+                    <label for="item5">Cheese Pizza</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item6" class="unAvailable">
+                    <label for="item6">Corn Pizza</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="item7" class="Available">
+                    <label for="item7">Biryani</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+            
